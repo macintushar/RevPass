@@ -12,8 +12,8 @@ client = Client(account_sid, auth_token)
 message = client.messages \
                 .create(
                      body=safePass,
-                     from_='+12056228658',
-                     to='+919110894405'
+                     from_='twilio_phone_number',
+                     to='verified_phone_number'
                  )
 
 print(message.sid)
